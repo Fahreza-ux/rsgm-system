@@ -2,85 +2,28 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - RSGM Management</title>
+    <title>Dashboard Admin - RSGM</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-gray-100 font-sans">
-
-    <div class="flex h-screen overflow-hidden">
-        <aside class="w-64 bg-blue-900 text-white flex-shrink-0 hidden md:block">
-            <div class="p-6 text-xl font-bold border-b border-blue-800 flex items-center">
-                <i class="fa-solid fa-hospital-user mr-3"></i> Admin RSGM
+<body class="bg-gray-50">
+    <nav class="bg-blue-600 p-4 text-white flex justify-between shadow-lg">
+        <h1 class="font-bold">RSGM Dashboard</h1>
+        <a href="index.html" class="bg-red-500 px-3 py-1 rounded text-sm">Logout</a>
+    </nav>
+    <div class="p-10 text-center">
+        <h2 class="text-3xl font-bold text-blue-900">Selamat Datang, Admin Reza!</h2>
+        <p class="mt-4 text-gray-600">Sistem manajemen gigi dan mulut siap digunakan.</p>
+        
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-6 shadow rounded-lg border-l-4 border-blue-500">
+                <h3 class="font-bold">Antrean Pasien</h3>
+                <p class="text-2xl">15 Orang</p>
             </div>
-            <nav class="mt-6">
-                <a href="#" class="block py-3 px-6 bg-blue-800 border-l-4 border-blue-400">Dashboard</a>
-                <a href="#" class="block py-3 px-6 hover:bg-blue-800 transition">Data Pasien</a>
-                <a href="#" class="block py-3 px-6 hover:bg-blue-800 transition">Jadwal Dokter</a>
-                <a href="#" class="block py-3 px-6 hover:bg-blue-800 transition">Rekam Medis</a>
-                <a href="index.html" class="block py-3 px-6 mt-10 text-red-300 hover:text-red-100"><i class="fa-solid fa-power-off mr-2"></i> Keluar</a>
-            </nav>
-        </aside>
-
-        <main class="flex-1 overflow-y-auto">
-            <header class="bg-white shadow-sm p-4 flex justify-between items-center">
-                <h2 class="text-xl font-semibold text-gray-700">Ikhtisar Rumah Sakit</h2>
-                <div class="flex items-center space-x-4">
-                    <span class="text-gray-600">Halo, Admin Reza</span>
-                    <div class="w-10 h-10 rounded-full bg-blue-500 border-2 border-white shadow-sm"></div>
-                </div>
-            </header>
-
-            <div class="p-6">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-green-500">
-                        <p class="text-sm text-gray-500 uppercase font-bold">Pasien Hari Ini</p>
-                        <p class="text-3xl font-bold text-gray-800">42</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-yellow-500">
-                        <p class="text-sm text-gray-500 uppercase font-bold">Menunggu Antrean</p>
-                        <p class="text-3xl font-bold text-gray-800">12</p>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
-                        <p class="text-sm text-gray-500 uppercase font-bold">Dokter Aktif</p>
-                        <p class="text-3xl font-bold text-gray-800">8</p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-md overflow-hidden">
-                    <div class="p-4 border-b bg-gray-50 flex justify-between items-center">
-                        <h3 class="font-bold text-gray-700">Antrean Pasien Terbaru</h3>
-                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm hover:bg-blue-700">+ Tambah Pasien</button>
-                    </div>
-                    <table class="w-full text-left">
-                        <thead class="bg-gray-100 text-gray-600 text-sm uppercase">
-                            <tr>
-                                <th class="p-4">No. Rekam Medis</th>
-                                <th class="p-4">Nama Pasien</th>
-                                <th class="p-4">Poliklinik</th>
-                                <th class="p-4">Status</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y text-gray-700">
-                            <tr>
-                                <td class="p-4 font-mono text-sm">RM-2026-001</td>
-                                <td class="p-4 font-semibold">Andi Wijaya</td>
-                                <td class="p-4">Bedah Mulut</td>
-                                <td class="p-4"><span class="px-2 py-1 bg-yellow-100 text-yellow-800 rounded-full text-xs font-bold">Menunggu</span></td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 font-mono text-sm">RM-2026-002</td>
-                                <td class="p-4 font-semibold">Siti Aminah</td>
-                                <td class="p-4">Ortodonti (Behel)</td>
-                                <td class="p-4"><span class="px-2 py-1 bg-green-100 text-green-800 rounded-full text-xs font-bold">Selesai</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="bg-white p-6 shadow rounded-lg border-l-4 border-green-500">
+                <h3 class="font-bold">Dokter Standby</h3>
+                <p class="text-2xl">4 Dokter</p>
             </div>
-        </main>
+        </div>
     </div>
-
 </body>
 </html>
