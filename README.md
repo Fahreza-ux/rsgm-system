@@ -4,7 +4,7 @@ Sistem informasi berbasis web yang dirancang untuk mengelola administrasi rumah 
 
 ## 🚀 Demo
 Anda dapat melihat tampilan live aplikasi ini melalui GitHub Pages:
-[Link Demo Anda di Sini] ( [https://username.github.io/rsgm-system/](https://github.com/Fahreza-ux/rsgm-system))
+(https://fahreza-ux.github.io/rsgm-system/) (https://username.github.io/rsgm-system/](https://github.com/Fahreza-ux/rsgm-system))
 
 ## ✨ Fitur Utama
 * **Modern UI/UX**: Menggunakan Tailwind CSS untuk tampilan yang bersih dan profesional.
@@ -18,6 +18,13 @@ Anda dapat melihat tampilan live aplikasi ini melalui GitHub Pages:
 * **Tailwind CSS**: Framework CSS untuk styling cepat dan modern.
 * **Font Awesome**: Library ikon untuk antarmuka yang intuitif.
 * **JavaScript (Vanilla)**: Logika sederhana untuk navigasi dan interaksi UI.
+
+## 🔐 Kredensial Uji Coba (Login)
+Untuk keperluan testing, silakan gunakan akun berikut:
+* **Username**: `admin`
+* **Password**: `12345`
+
+*Jika password dimasukkan salah, sistem akan menampilkan notifikasi error dan memberikan efek animasi getar pada form.*
 
 ## 📂 Struktur Folder
 ```text
