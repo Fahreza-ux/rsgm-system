@@ -4,7 +4,7 @@ Sistem informasi berbasis web yang dirancang untuk mengelola administrasi rumah 
 
 ## 🚀 Demo
 Anda dapat melihat tampilan live aplikasi ini melalui GitHub Pages:
-[Link Demo Anda di Sini] (Contoh: https://username.github.io/rsgm-system/)
+[Link Demo Anda di Sini] ( [https://username.github.io/rsgm-system/](https://github.com/Fahreza-ux/rsgm-system))
 
 ## ✨ Fitur Utama
 * **Modern UI/UX**: Menggunakan Tailwind CSS untuk tampilan yang bersih dan profesional.
