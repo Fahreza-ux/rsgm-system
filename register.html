@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun Baru - RSGM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-lg">
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-gray-800">Pendaftaran Staf Baru</h1>
+            <p class="text-gray-500">Lengkapi data untuk akses sistem RSGM</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Pendaftaran Berhasil! Silakan Login.'); window.location.href='index.html';">
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">Nama Lengkap</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" placeholder="Contoh: Reza" required>
+                </div>
+                <div>
+                    <label class="block text-gray-700 text-sm mb-1">NIP / ID Staf</label>
+                    <input type="text" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" placeholder="123456" required>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm mb-1">Unit Tugas</label>
+                <select class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                    <option>Poli Gigi Umum</option>
+                    <option>Ortodonti</option>
+                    <option>Bedah Mulut</option>
+                    <option>Administrasi</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm mb-1">Username Baru</label>
+                <input type="text" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" required>
+            </div>
+            <div class="mb-6">
+                <label class="block text-gray-700 text-sm mb-1">Password</label>
+                <input type="password" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-400 outline-none" required>
+            </div>
+            <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-lg transition-all shadow-md">
+                DAFTAR SEKARANG
+            </button>
+        </form>
+
+        <div class="mt-4 text-center">
+            <a href="index.html" class="text-sm text-gray-500 hover:text-blue-600 italic">Sudah punya akun? Kembali ke Login</a>
+        </div>
+    </div>
+</body>
+</html>
